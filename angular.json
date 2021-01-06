@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "rx-angular"
+  "defaultProject": "rx-angular",
+  "cli": {
+    "analytics": "04580472-d882-4e75-89ef-23ee5cdd34ad"
+  }
 }
