@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { RxState } from '@rx-angular/state';
 import { interval, Subject } from 'rxjs';
-// import { tap } from 'rxjs/operators';
+import { tap } from 'rxjs/operators';
 import { ListService } from './list.service';
 import { ComponentState } from './Models/ComponentState.state';
 
@@ -17,7 +17,7 @@ export class Sample1Component
   expandChanges = new Subject();
 
   resetRefreshInterval() {
-    this.expandChanges.pipe();
+    this.expandChanges.pipe(tap);
     this.refreshIntervalSubscription = interval(this.get('refreshInterval'))
       .pipe(tap((x) => this.listService.Refetch()))
       .subscribe();
