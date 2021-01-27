@@ -4,9 +4,6 @@ import { SampleModule } from "@myApp/lib1-name";
 import { AppComponent } from './app.component';
 
 
-
-
-
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, SampleModule],
