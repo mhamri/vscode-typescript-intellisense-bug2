@@ -1,4 +1,4 @@
-# steps to reporduce:
+# steps to reproduce:
 
 ![recorded repo](./record.gif)
 
