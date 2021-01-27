@@ -16,3 +16,9 @@
 > Node.js: 12.14.1 <br>
 > V8: 8.3.110.13-electron.0 <br>
 > OS: Windows_NT x64 10.0.19042 <br>
+
+# Converted to
+
+[angular repo](https://github.com/angular/angular/issues/40407)
+[rxjs repo](https://github.com/ReactiveX/rxjs/issues/5950)
+[typescript repo](https://github.com/microsoft/TypeScript/issues/42247)
