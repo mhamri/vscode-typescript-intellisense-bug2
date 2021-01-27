@@ -111,6 +111,43 @@
           }
         }
       }
+    },
+    "lib1": {
+      "projectType": "library",
+      "root": "libs/lib1",
+      "sourceRoot": "libs/lib1/src",
+      "prefix": "nx-sample",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/lib1/tsconfig.lib.json",
+            "project": "libs/lib1/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/lib1/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib1/src/**/*.ts",
+              "libs/lib1/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/lib1"],
+          "options": {
+            "jestConfig": "libs/lib1/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {
