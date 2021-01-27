@@ -1,2 +1,2 @@
-export * from "./lib/sample/sample.module";
+import "./lib/sample";
 

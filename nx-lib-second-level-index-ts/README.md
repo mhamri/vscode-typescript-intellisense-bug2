@@ -1,3 +1,5 @@
+Created based on [this](https://github.com/microsoft/TypeScript/issues/42247#issuecomment-758863988)
+
 # steps to reporduce:
 
 ![recorded repo](./record.gif)
